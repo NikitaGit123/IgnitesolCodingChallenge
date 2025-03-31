@@ -1,0 +1,155 @@
+/* Global Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #F8F7FF;
+    /* Light background */
+    color: #333333;
+    /* Default text color */
+}
+
+/* Colors */
+:root {
+    --primary-color: #5E56E7;
+    --secondary-color: #F8F7FF;
+    --grey-light: #F0F0F6;
+    --grey-medium: #A0A0A0;
+    --grey-dark: #333333;
+}
+
+/* Typography */
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--grey-dark);
+}
+
+/* Button Styles */
+.btn-primary {
+    @apply px-4 py-2 text-white rounded-md text-center shadow-md;
+    background-color: var(--primary-color);
+}
+
+/* Card Styles */
+.generCard {
+    display: flex;
+}
+
+.cardColumn {
+    width: 100%;
+}
+
+.card {
+    @apply p-[10px] rounded-md shadow-md h-[50px] flex items-center justify-center bg-white text-center;
+    box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+    margin: 5% 20%;
+    color: var(--grey-dark);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ;
+    padding: 0px 10px 0px 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+/* Search Box */
+.search-box {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey-dark);
+}
+
+/* Card Icon */
+.cardIcon {
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+.genre-card {
+    display: flex;
+    align-items: center;
+}
+
+.CardHeading {
+    background-image: url("../assets/Pattern.svg");
+    /* Adjust the path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333333;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    padding: 20px;
+    width: 100%;
+}
+
+.headingSection {
+    margin-left: 10%;
+}
+
+/* Book Section */
+
+.bookHeading {
+    color: #333333;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.bookheadingSection {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", "Semi Bold";
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.searchBoxx {
+    border-radius: 4px;
+    height: 40px;
+    border: 1px solid transparent;
+    background-color: #F0F0F6;
+    width: 100%;
+}
+
+
+.searchBoxx:focus {
+    outline: none;
+    border: 1px solid #5E56E7;
+    background-color: #f0f0f6ee;
+}
+
+.Rectangle {
+    width: 114px;
+    height: 162px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.BookList {
+    margin: 5% 10%;
+}
